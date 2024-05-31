@@ -32,8 +32,9 @@ body {
 .start-btn {
     padding: 20px;
     font-weight: bold;
-    color:#2596be;
+    color: #2596be;
     border-color: #2596be;
+    margin-top: 25%;
 }
 
 .question-area {
@@ -55,4 +56,12 @@ body {
 #incorrect {
     color: red;
     font-weight: bold;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    .start-btn {
+        margin-top: 12%;
+    }
 }
