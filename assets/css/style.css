@@ -32,6 +32,8 @@ body {
 .start-btn {
     padding: 20px;
     font-weight: bold;
+    color:#2596be;
+    border-color: #2596be;
 }
 
 .question-area {
