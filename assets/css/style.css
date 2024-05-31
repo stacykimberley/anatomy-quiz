@@ -11,6 +11,7 @@ body {
 }
 
 .game-area {
+    text-align:center;
     background-color: rgba(255, 255, 255, .7);
     box-sizing: border-box;
     width: 85%;
@@ -20,4 +21,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+}
+
+.question-area {
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
 }
