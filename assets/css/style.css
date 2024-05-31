@@ -11,21 +11,33 @@ body {
 }
 
 .game-area {
-    text-align:center;
+    text-align: center;
     background-color: rgba(255, 255, 255, .8);
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
     max-height: 450px;
     max-width: 830px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
 }
 
+.start-area {
+    background-color: rgba(255, 255, 255, .9);
+    height: 50%;
+}
+
+.start-btn {
+    padding: 20px;
+    font-weight: bold;
+}
+
 .question-area {
     background-color: rgba(255, 255, 255, .9);
     color: black;
+    height: 50%;
 }
 
 .scores {
