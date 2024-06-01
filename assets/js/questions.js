@@ -23,7 +23,7 @@ let questions = [{
             answer: "1",
         },
         {
-            question: "What is the scientific name for the human ''tail'?",
+            question: "What is the scientific name for the human 'tail'?",
             option1: "Coccyx",
             option2: "Spine",
             option3: "Vertebrae",
