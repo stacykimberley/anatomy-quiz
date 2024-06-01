@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
-    max-height: 450px;
+    max-height: 500px;
     max-width: 830px;
     margin-top: 5%;
     margin-left: auto;
@@ -45,7 +45,7 @@ body {
 
 .scores {
     display: inline-block;
-    padding: 20px;
+    padding: 0;
 }
 
 .answer-area {
@@ -56,7 +56,7 @@ body {
 
 .option-btn {
     padding: 10px;
-    background-color:#77C7E4;
+    background-color: #77C7E4;
     cursor: pointer;
     transition: background-color 0.3s;
 
@@ -77,24 +77,23 @@ body {
 }
 
 .progress-container {
-    width: 100%;            
-    background-color: #e0e0e0; 
-    border-radius: 25px;    
-    overflow: hidden;       
-    height: 30px;           
-    margin: 20px 0;         
-  }
-  
-  .progress-bar {
-    height: 100%;          
-    width: 0%;              
-    background-color: #76c7c0; 
-    border-radius: 25px;    
-    text-align: center;    
-    line-height: 30px;      
-    color: white;          
-    transition: width 0.5s; 
-  }
+    width: 100%;
+    background-color: #CCEAF5;
+    overflow: hidden;
+    height: 20px;
+    margin: 0;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #2593BB;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    transition: width 0.5s;
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -110,4 +109,8 @@ body {
     .start-btn {
         margin-top: 10%;
     }
-}    
+
+    .progress-container {
+        margin-top: 20px;
+    }
+}

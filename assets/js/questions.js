@@ -1,4 +1,4 @@
-let questions = [{
+const questions = [{
             question: "Which part of the brain regulates physiological stability in the body?",
             option1: "Heart",
             option2: "Hypothalamus",
