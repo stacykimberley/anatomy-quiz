@@ -48,6 +48,24 @@ body {
     padding: 20px;
 }
 
+.answer-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    padding: 10px;
+    background-color:#2596be;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #2286AA;
+}
+
 #score {
     color: #2596be;
     font-weight: bold;
