@@ -56,18 +56,18 @@ body {
 
 .option-btn {
     padding: 10px;
-    background-color:#2596be;
+    background-color:#77C7E4;
     cursor: pointer;
     transition: background-color 0.3s;
 
 }
 
-.btn:hover {
-    background-color: #2286AA;
+.option-btn:hover {
+    background-color: #33ABD7;
 }
 
 #score {
-    color: #2596be;
+    color: #2286AA;
     font-weight: bold;
 }
 
@@ -75,6 +75,26 @@ body {
     color: red;
     font-weight: bold;
 }
+
+.progress-container {
+    width: 100%;            
+    background-color: #e0e0e0; 
+    border-radius: 25px;    
+    overflow: hidden;       
+    height: 30px;           
+    margin: 20px 0;         
+  }
+  
+  .progress-bar {
+    height: 100%;          
+    width: 0%;              
+    background-color: #76c7c0; 
+    border-radius: 25px;    
+    text-align: center;    
+    line-height: 30px;      
+    color: white;          
+    transition: width 0.5s; 
+  }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
