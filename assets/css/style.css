@@ -37,6 +37,31 @@ body {
     margin-top: 25%;
 }
 
+/* Style for the username label */
+label[for="username"] {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2596be;
+}
+
+/* Style for the username input */
+.username {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #2596be;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Adjust the start button margin to give space for the input field */
+.start-btn {
+    margin-top: 5%;
+}
+
 .question-area {
     background-color: rgba(255, 255, 255, .9);
     color: black;
