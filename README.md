@@ -4,22 +4,123 @@
 
 # Purpose
 
-The purpose of this Human Anatomy Quiz is to provide an engaging and educational experience for individuals interested in learning about human anatomy. This quiz serves as a fun way to test and expand your knowledge of various anatomical structures and their functions. By answering a series of questions randomly selected from a diverse question bank, users can challenge themselves and reinforce their understanding of key biological concepts. The quiz aims to make learning interactive and enjoyable, making it suitable for students, educators, and anyone curious about human anatomy. Through immediate feedback and score tracking, users can monitor their progress and identify areas for improvement, thereby enhancing their overall learning experience.
+The Human Anatomy Quiz aims to provide an engaging and educational experience for those interested in learning about human anatomy. It offers a fun way to test and expand knowledge of anatomical structures and functions through randomly selected questions. The quiz is designed to be interactive and enjoyable, suitable for students, educators, and anyone curious about anatomy. 
 
 # Goal:
 
-The goal of the Human Anatomy Quiz is to foster a deeper understanding of human anatomy through an interactive and dynamic learning tool. By challenging users with a variety of questions, the quiz aims to:
+The goal of the Human Anatomy Quiz is to foster a deeper understanding of human anatomy through an interactive and dynamic learning tool. 
 
-- Enhance Knowledge: Provide a platform for users to learn and recall important anatomical facts and concepts.
-- Promote Engagement: Create an enjoyable and stimulating environment that encourages continuous learning and curiosity about the human body.
-- Assess Understanding: Offer a means for users to test their knowledge, receive instant feedback, and identify areas where they need further study.
-- Encourage Retention: Utilize repetitive and varied questioning to help solidify users' knowledge and improve long-term retention of anatomical information.
-- Support Education: Serve as a valuable resource for students, educators, and lifelong learners interested in human anatomy.
+[Here's a link to the live website](https://stacykimberley.github.io/anatomy-quiz/)
 
+# UX Design 
 
+## Target audience
 
+People of all ages with a specific interest in the human anatomy.
 
+## User Stories
 
+### As a first time user:
+
+- I want to start the quiz after entering my username.
+- I want to answer questions about human anatomy.
+- I want to receive immediate feedback on my answers.
+- I want to see my progress and score during the quiz.
+- I want to retake the quiz if I am not satisfied with my score or just for more fun.
+- I want to be able to use the application on different sized screens
+
+### As a returning user:
+
+- I want to find new questions added.
+
+## Technologies:
+
+- The quiz is developed using HTML, CSS, and JavaScript for frontend functionality.
+- No backend server or database management system is included in the initial scope.
+
+## Assumptions:
+
+- Users have basic familiarity with web browsing and interacting with online quizzes.
+- The quiz is designed for educational purposes and does not substitute professional medical advice or training.
+
+## Constraints:
+
+- The development of the quiz is limited to frontend technologies and does not involve server-side processing or data storage.
+- Design considerations may be constrained by available resources and development timeframes.
+
+## Structure
+
+### Home Page
+
+#### The home page is the face of the Anatomy Quiz website and has the following features:
+
+- 
+
+### Quiz Page
+
+-
+
+### Feedback Page
+
+-
+
+## Wireframes
+
+### Home Page
+
+### Quiz Page
+
+### Feedback Page
+
+## Design
+
+### Background Image
+
+### Colors
+
+### Font
+
+## Features
+
+## Responsive Layout
+
+The page is designed to responsive on all screen sizes starting from 344pixels for mobile phones, 768 pixels for tablets and greater than 992pixels so it's aesthetically pleasing for laptops and slightly larger screens.
+
+## Technologies
+
+- HTML for website structure
+- CSS to style website
+- GitHub to store the source code and GitHub Pages to deploy and host the live site
+- Gitpod chosen IDE to develop the website
+- Google Fonts
+- Font Awesome for icons
+- Google Chrome Dev Tools
+- Favicon.cc 
+- Coolors to choose color palette
+- Techsini to create mockup of website on different iOS devices
+- Google chrome Lighthouse
+- Screen Reader for Google Chrome
+- Colorfilter
+- W3C HTML Markup Validator to validate HTML code
+- W3C Jigsaw CSS Validator to validate CSS code
+Markdown Tables Generator to create user experience testing table
+LibreOffice Calc to create tables
+- Code Institute's Gitpod Template to generate the workspace for the project
+- Code institute learnings for general guidance.
+- JavaScript for interactivity of the Quiz.
+
+## Testing 
+
+### User Story Testing:
+
+### Feature Testing:
+
+### Validator Testing:
+
+#### HTML on [W3C Validator](https://validator.w3.org/)
+No errors or warnings were returned.
+
+#### CSS on [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
 
 
 
