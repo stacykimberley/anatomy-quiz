@@ -54,29 +54,53 @@ People of all ages with a specific interest in the human anatomy.
 
 #### The home page is the face of the Anatomy Quiz website and has the following features:
 
-- 
+- Title of the quiz "How well do you know the human anatomy?"
+- Required username input so the user can enter their name before they start the quiz.
+- Start button that redirects the user to the first question of the quiz.
 
 ### Quiz Page
 
--
+- Title of the quiz "How well do you know the human anatomy?".
+- A question.
+- 4 answer options.
+- Score area showing how many the user has got correct and incorrect.
+- Progress bar to show how far along the quiz the user has gone.
+- When answer is selected it highlights green if correct and red if wrong.
 
-### Feedback Page
+### Feedback Page.
 
--
+- Congratulates the user by name for completing the quiz.
+- Shows the user their final score.
+- Shows a button to retake the quiz if the user wants to.
 
 ## Wireframes
 
 ### Home Page
 
+![Home Page Mockup](assets/images/readme/big-screen-home.JPEG)
+
+
 ### Quiz Page
 
+![Quiz Page Mockup](assets/images/readme/big-screen-quiz.JPEG)
+
+
 ### Feedback Page
+
+![Feedback Page Mockup](assets/images/readme/big-screen-feedback.JPEG)
+
 
 ## Design
 
 ### Background Image
 
+An image from iStock was used as a background image. It's an AI generated image of the immune system defending the body against infections and diseases. 
+
 ### Colors
+
+![Color pallete](assets/images/readme/color-pallete.png)
+
+Color pallete was mostly derived from the background image so everything looks well put together and  aesthetically pleasing.
 
 ### Font
 
