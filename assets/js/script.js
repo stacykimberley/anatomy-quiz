@@ -1,88 +1,85 @@
-// Function to start the quiz
-function startQuiz() {
-    // Navigate to the quiz page
-    window.location.href = 'quiz.html';
+// Define variables to keep track of the quiz state
+let currentQuestion = 0;
+let score = 0;
+
+// Function to shuffle questions array
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
 }
 
-// Function to generate a random quiz with 5 questions
-function generateQuiz() {
-    // Get reference to the answer area
-    const answerArea = document.getElementById('answer-area');
-    // Clear previous answer buttons
-    answerArea.innerHTML = '';
-
-    // Shuffle the questions array
-    const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-    // Select the first 5 questions
-    const selectedQuestions = shuffledQuestions.slice(0, 5);
-
-    // Iterate through selected questions
-    selectedQuestions.forEach((question, index) => {
-        // Create question element
-        const questionElement = document.createElement('p');
-        questionElement.textContent = `${index + 1}. ${question.question}`;
-        answerArea.appendChild(questionElement);
-
-        // Create answer buttons
-        for (let i = 1; i <= 4; i++) {
-            const optionButton = document.createElement('button');
-            optionButton.textContent = question['option' + i];
-            optionButton.classList.add('option-btn');
-            optionButton.setAttribute('data-correct', question.answer === i.toString());
-            answerArea.appendChild(optionButton);
-        }
-    });
+// Function to load questions for the quiz
+function loadQuiz() {
+  // Shuffle questions array to randomize questions
+  let shuffledQuestions = shuffle(questions);
+  let questionArea = document.querySelector('.question-area');
+  
+  // Display current question
+  questionArea.innerHTML = `
+    <p>${shuffledQuestions[currentQuestion].question}</p>
+    <div id="answer-area" class="answer-area">
+        <button class="option-btn" onclick="checkAnswer(1)"> ${shuffledQuestions[currentQuestion].option1}</button>
+        <button class="option-btn" onclick="checkAnswer(2)"> ${shuffledQuestions[currentQuestion].option2}</button>
+        <button class="option-btn" onclick="checkAnswer(3)"> ${shuffledQuestions[currentQuestion].option3}</button>
+        <button class="option-btn" onclick="checkAnswer(4)"> ${shuffledQuestions[currentQuestion].option4}</button>
+    </div>
+  `;
 }
 
-// Function to handle quiz completion
-function handleQuizCompletion() {
-    // Get score and incorrect count from local storage
-    const score = localStorage.getItem('score');
-    const incorrect = localStorage.getItem('incorrect');
+// Function to check the answer selected by the user
+function checkAnswer(selectedOption) {
+  let correctAnswer = questions[currentQuestion].answer;
+  let selectedButton = document.querySelector(`.option-btn:nth-child(${selectedOption})`);
+  
+  if (selectedOption == correctAnswer) {
+    // Highlight correct answer button green
+    selectedButton.style.backgroundColor = '#2ecc71';
+    score++;
+  } else {
+    // Highlight wrong answer button red
+    selectedButton.style.backgroundColor = '#e74c3c';
+  }
 
-    // Display score and incorrect count
-    document.getElementById('score').textContent = score;
-    document.getElementById('incorrect').textContent = incorrect;
+  // Disable all buttons to prevent multiple selections
+  let answerButtons = document.querySelectorAll('.option-btn');
+  answerButtons.forEach(button => {
+    button.disabled = true;
+  });
+
+  // Move to the next question or end the quiz
+  setTimeout(() => {
+    currentQuestion++;
+    if (currentQuestion < 5) {
+      loadQuiz();
+    } else {
+      endQuiz();
+    }
+  }, 1000);
 }
 
-// Function to retake the quiz
-function retakeQuiz() {
-    // Clear local storage
-    localStorage.removeItem('score');
-    localStorage.removeItem('incorrect');
-    // Navigate back to the quiz page
-    window.location.href = 'quiz.html';
+// Function to end the quiz and display the score
+function endQuiz() {
+  // Store the score in localStorage to display in feedback.html
+  localStorage.setItem('score', score);
+
+  // Redirect to feedback.html
+  window.location.href = 'feedback.html';
 }
 
-// Event listener for start button
-document.querySelector('.start-btn').addEventListener('click', startQuiz);
+// Event listener for the start button
+document.querySelector('.start-btn').addEventListener('click', () => {
+  // Redirect to quiz.html
+  window.location.href = 'quiz.html';
+});
 
-// Event listener for quiz page load
-if (window.location.pathname === '/quiz.html') {
-    generateQuiz(); // Generate quiz on quiz page load
-
-    // Event listener for option button click
-    document.querySelectorAll('.option-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const isCorrect = button.getAttribute('data-correct') === 'true';
-            if (isCorrect) {
-                let score = parseInt(localStorage.getItem('score')) || 0;
-                score++;
-                localStorage.setItem('score', score);
-            } else {
-                let incorrect = parseInt(localStorage.getItem('incorrect')) || 0;
-                incorrect++;
-                localStorage.setItem('incorrect', incorrect);
-            }
-            generateQuiz(); // Generate next question
-        });
-    });
-}
-
-// Event listener for feedback page load
-if (window.location.pathname === '/feedback.html') {
-    handleQuizCompletion(); // Display score and incorrect count on feedback page load
-}
-
-// Event listener for retake button
-document.querySelector('.retake-btn').addEventListener('click', retakeQuiz);
+// Load the quiz when the quiz.html page loads
+window.addEventListener('DOMContentLoaded', loadQuiz);
