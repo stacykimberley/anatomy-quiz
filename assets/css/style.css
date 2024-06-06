@@ -26,31 +26,41 @@ body {
 .start-area {
     background-color: rgba(255, 255, 255, .9);
     height: 50%;
+    padding: 20px;
+    position: relative; /* Ensure relative positioning for z-indexing */
 }
 
+/* Style for the buttons */
+.retake-btn, .start-btn {
+    padding: 20px;
+    font-weight: bold;
+    color: rgba(37, 150, 190, 1);
+    border: 2px solid rgba(37, 150, 190, 1);
+    width: 45%; /* Ensure both buttons have the same width */
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Style for the retake button */
 .retake-btn {
-    padding: 20px;
-    font-weight: bold;
-    color: #2596be;
-    border-color: #2596be;
-    margin-top: 25%;
+    top: 50%; /* Position behind the start button */
+    display: none; /* Hide the retake button */
 }
 
+/* Style for the start button */
 .start-btn {
-    padding: 20px;
-    font-weight: bold;
-    color: #2596be;
-    border-color: #2596be;
-    margin-top: 25%;
+    top: 50%; /* Position in the center of the start area */
 }
 
 /* Style for the username label */
-label[for="username"] {
+.username-label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.2em;
-    color: #2596be;
+    color: rgba(37, 150, 190, 1);
 }
 
 /* Style for the username input */
@@ -58,15 +68,10 @@ label[for="username"] {
     width: 90%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #2596be;
+    border: 2px solid rgba(37, 150, 190, 1);
     border-radius: 5px;
     font-size: 1em;
     box-sizing: border-box;
-}
-
-/* Adjust the start button margin to give space for the input field */
-.start-btn {
-    margin-top: 5%;
 }
 
 .question-area {
@@ -88,14 +93,13 @@ label[for="username"] {
 
 .option-btn {
     padding: 10px;
-    background-color: #77C7E4;
+    background-color: rgba(119, 199, 228, 1);
     cursor: pointer;
     transition: background-color 0.3s;
-
 }
 
 .option-btn:hover {
-    background-color: #33ABD7;
+    background-color: rgba(51, 171, 215, 1);
 }
 
 #score {
@@ -104,7 +108,7 @@ label[for="username"] {
 }
 
 #incorrect {
-    color: red;
+    color: rgba(255, 0, 0, 1);
     font-weight: bold;
 }
 
@@ -129,16 +133,14 @@ label[for="username"] {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-
-    .start-btn {
+    .start-btn, .retake-btn {
         margin-top: 12%;
     }
 }
 
 /* Larger devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
-    .start-btn {
+    .start-btn, .retake-btn {
         margin-top: 10%;
     }
 
