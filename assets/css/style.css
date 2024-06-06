@@ -102,6 +102,15 @@ body {
     background-color: rgba(51, 171, 215, 1);
 }
 
+/* Add styles for correct and incorrect answers */
+.option-btn.correct-answer {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.option-btn.incorrect-answer {
+    background-color: rgba(255, 0, 0, 0.3); 
+}
+
 #score {
     color: #2286AA;
     font-weight: bold;

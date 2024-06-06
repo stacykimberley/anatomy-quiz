@@ -43,17 +43,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to check the selected answer
     function checkAnswer(selected, correct) {
-        if (selected == correct) {
+        selected = parseInt(selected);
+        correct = parseInt(correct);
+        
+        const buttons = document.querySelectorAll('.option-btn');
+        buttons.forEach((button, index) => {
+            if (index + 1 === correct) {
+                button.classList.add('correct-answer');
+            } else if (index + 1 === selected) {
+                button.classList.add('incorrect-answer');
+            }
+            // Disable all buttons after an answer is selected
+            button.disabled = true;
+        });
+    
+        // Update the score and move to the next question
+        if (selected === correct) {
             score++;
         } else {
             incorrect++;
         }
-
         scoreElement.innerText = score;
         incorrectElement.innerText = incorrect;
         currentQuestionIndex++;
-        displayQuestion(currentQuestionIndex);
+        setTimeout(() => {
+            displayQuestion(currentQuestionIndex);
+        }, 1000); // Delay to see the answer highlight
     }
+    
 
     // Function to update the progress bar
     function updateProgressBar(index) {
@@ -66,8 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         questionArea.innerHTML = ''; // Clearing the question area
         answerArea.innerHTML = ''; // Clearing the answer area
         progressBar.style.width = '100%'; // Updating progress bar to full width
-        scoreElement.innerText = ''; // Clearing the score element
-        incorrectElement.innerText = ''; // Clearing the incorrect element
         retakeButton.style.display = 'block'; // Unhiding the retake button
     }
 
