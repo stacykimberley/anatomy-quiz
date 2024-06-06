@@ -20,12 +20,11 @@
         <h1 class="heading">How Well Do You Know The Human Anatomy?</h1>
 
         <div class="start-area">
-            <label for="username" class="username-label">Username:</label>
-            <input type="text" id="username" class="username" required>
-
-            <a href="quiz.html">
-                <button class="start-btn" type="button">Start Quiz!</button>
-            </a>
+            <form id="username-form" action="quiz.html" action="POST">
+                <label for="username" class="username-label">Username:</label>
+                <input type="text" id="username" class="username" required>
+                <button class="start-btn" type="submit">Start Quiz!</button>
+            </form>
         </div>
     </div>
 
