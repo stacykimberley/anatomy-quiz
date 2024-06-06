@@ -104,7 +104,20 @@ Color pallete was mostly derived from the background image so everything looks w
 
 ### Font
 
+Only one font (Jura) was used throughout the quiz for uniformity.
+
 ## Features
+
+### Home Page
+
+screenshots of username and start button, 
+
+### Quiz Page
+quiz correct answer in green, wrong in red, correct score, incorrect score, progress bar
+
+### Feedback Page
+
+congra message, retake button, final correct and incorrect score, completed progress bar
 
 ## Responsive Layout
 
@@ -127,7 +140,7 @@ The page is designed to responsive on all screen sizes starting from 344pixels f
 - Colorfilter
 - W3C HTML Markup Validator to validate HTML code
 - W3C Jigsaw CSS Validator to validate CSS code
-Markdown Tables Generator to create user experience testing table
+- Balsamiq for wireframes
 LibreOffice Calc to create tables
 - Code Institute's Gitpod Template to generate the workspace for the project
 - Code institute learnings for general guidance.
@@ -145,7 +158,8 @@ LibreOffice Calc to create tables
 No errors or warnings were returned.
 
 #### CSS on [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
-
+ 
+javascript testing 
 
 
 
