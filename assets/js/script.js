@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to show the final score
   function showFinalScore() {
-      questionArea.innerHTML = `<h2>Quiz Completed!</h2><p>Your Score: ${score}</p><p>Incorrect Answers: ${incorrect}</p>`;
+      questionArea.innerHTML = `<h2>Congratulations Username! You've completed the quiz!</h2><p>Your Score: ${score}</p><p>Incorrect Answers: ${incorrect}</p>`;
       answerArea.innerHTML = '';
       progressBar.style.width = '100%';
   }
