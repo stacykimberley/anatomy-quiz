@@ -45,7 +45,7 @@ body {
 
 /* Style for the retake button */
 .retake-btn {
-    top: 50%; /* Position behind the start button */
+    top: 30%;
     display: none; /* Hide the retake button */
 }
 
@@ -135,6 +135,10 @@ body {
 @media screen and (min-width: 768px) {
     .start-btn, .retake-btn {
         margin-top: 12%;
+    }
+
+    .retake-btn {
+    top: 15%;
     }
 }
 
