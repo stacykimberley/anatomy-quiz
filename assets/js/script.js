@@ -20,27 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to display a question
     function displayQuestion(index) {
-        function displayQuestion(index) {
-            if (index >= selectedQuestions.length) {
-                showFinalScore();
-                return;
-            }
-    
-            const questionObj = selectedQuestions[index];
-            questionArea.querySelector('p').innerText = questionObj.question;
-    
-            const options = [questionObj.option1, questionObj.option2, questionObj.option3, questionObj.option4];
-            answerArea.innerHTML = '';
-            options.forEach((option, i) => {
-                const button = document.createElement('button');
-                button.classList.add('option-btn');
-                button.innerText = option;
-                button.addEventListener('click', () => checkAnswer(i + 1, questionObj.answer));
-                answerArea.appendChild(button);
-            });
-    
-            updateProgressBar(index);
-    
+        if (index >= selectedQuestions.length) {
+            showFinalScore();
+            return;
+        }
+
+        const questionObj = selectedQuestions[index];
+        questionArea.querySelector('p').innerText = questionObj.question;
+
+        const options = [questionObj.option1, questionObj.option2, questionObj.option3, questionObj.option4];
+        answerArea.innerHTML = '';
+        options.forEach((option, i) => {
+            const button = document.createElement('button');
+            button.classList.add('option-btn');
+            button.innerText = option;
+            button.addEventListener('click', () => checkAnswer(i + 1, questionObj.answer));
+            answerArea.appendChild(button);
+        });
+
+        updateProgressBar(index);
+
     }
 
     // Function to check the selected answer
