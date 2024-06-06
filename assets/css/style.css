@@ -28,6 +28,14 @@ body {
     height: 50%;
 }
 
+.retake-btn {
+    padding: 20px;
+    font-weight: bold;
+    color: #2596be;
+    border-color: #2596be;
+    margin-top: 25%;
+}
+
 .start-btn {
     padding: 20px;
     font-weight: bold;
