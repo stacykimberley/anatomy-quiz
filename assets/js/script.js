@@ -44,6 +44,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to check the selected answer
     function checkAnswer(selected, correct) {
+        selected = parseInt(selected);
+        correct = parseInt(correct);
+        
+        const buttons = document.querySelectorAll('.option-btn');
+        buttons.forEach((button, index) => {
+            if (index + 1 === correct) {
+                button.classList.add('correct-answer');
+            } else if (index + 1 === selected) {
+                button.classList.add('incorrect-answer');
+            }
+             // Disable all buttons after an answer is selected
+             button.disabled = true;
+        });
+    
 
     }
 
