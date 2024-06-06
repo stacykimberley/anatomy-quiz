@@ -124,6 +124,7 @@ body {
 .progress-container {
     width: 100%;
     background-color: #CCEAF5;
+    border-radius: 25px;
     overflow: hidden;
     height: 20px;
     margin: 0;
