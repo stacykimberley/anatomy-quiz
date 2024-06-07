@@ -57,8 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
              // Disable all buttons after an answer is selected
              button.disabled = true;
         });
-    
-
+        // Update the score and move to the next question
+        if (selected === correct) {
+            score++;
+        } else {
+            incorrect++;
+        }
+        scoreElement.innerText = score;
+        incorrectElement.innerText = incorrect;
+        currentQuestionIndex++;
+        setTimeout(() => {
+            displayQuestion(currentQuestionIndex);
+        }, 1000); // Delay to see the answer highlight
     }
 
     // Function to update the progress bar
