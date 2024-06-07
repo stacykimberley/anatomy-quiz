@@ -73,7 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to update the progress bar
     function updateProgressBar(index) {
-
+        const progress = ((index + 1) / selectedQuestions.length) * 100;
+        progressBar.style.width = `${progress}%`;
     }
 
     // Function to show the final score and the retake button
