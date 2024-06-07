@@ -159,8 +159,23 @@ LibreOffice Calc to create tables
 
 #### HTML on [W3C Validator](https://validator.w3.org/)
 
+**Home Page**
+
+![Homepage HTML Validator](assets/images/readme/index-html-check.png)
+
+No errors returned for index.html.
+
+**Quiz Page**
+
+![Quiz Page HTML Validator](assets/images/readme/quiz-html-check.png)
+
+An error returned because the retake button is a descendent of the a element. No changes being made to code at the moment.
 
 #### CSS on [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+
+![CSS Validator](assets/images/readme/style-css-check.png)
+
+No errors returned for style.css.
  
 javascript testing 
 
