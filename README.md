@@ -68,6 +68,7 @@ People of all ages with a specific interest in the human anatomy.
 - Score area showing how many the user has got correct and incorrect.
 - Progress bar to show how far along the quiz the user has gone.
 - When answer is selected it highlights green if correct and if wrong it highlights the selected one in red then simultaneously shows you the correct answer.
+- When an answer is selected it disables all the other selections to prevent cheating.
 
 ### Feedback Page.
 
@@ -75,6 +76,7 @@ People of all ages with a specific interest in the human anatomy.
 - Shows the user their final score.
 - Shows a button to retake the quiz if the user wants to.
 - Shows the progress bar at complete.
+- When user restarts the Quiz they do not have to re-enter their name as it is stored in local storage and it resets the scores and progress bar.
 
 ## Wireframes
 
@@ -179,9 +181,80 @@ No errors returned for style.css.
  
 javascript testing 
 
+### Google Lighthouse 
+
+#### Homepage
+
+**Mobile**
+
+![Homepage Lighthouse Mobile](assets/images/readme/homepage-mobile.png)
+
+**Desktop**
+
+![Homepage Lighthouse Desktop](assets/images/readme/homepage-desktop.png)
+
+#### Quiz Page
+
+**Mobile**
+
+![Quizpage Lighthouse Mobile](assets/images/readme/quiz-mobile.png)
+
+**Desktop**
+
+![Quizpage Lighthouse Desktop](assets/images/readme/quiz-desktop.png)
+
+## Deployment
+
+**This project was deployed to GitHub pages. The steps to deploy are as follows:**
+
+1. Log into GitHub.
+2. Select anatomy-quiz from the list of repositories.
+3. Select Settings From the Repositories sub-headings.
+4. In the left side menu select Pages from Code and automation section.
+5. Under the Source heading in the dropdown menu select main.
+6. A second drop-down menu should remain with the default value /(root).
+7. Press Save.
+8. A message that the website is ready to be deployed will appear, refresh the page and the link to the deployed site will be available in a green sub-section on the top of the page.
+9. Click on the link to go to the live deployed page.
+
+[Here's a link to the live website](https://stacykimberley.github.io/anatomy-quiz/)
+
+## How to run this project Locally
+
+**Clone the repository as follows:**
+
+1. Navigate to the GitHub Repository anatomy-quiz.
+2. Click the Code drop-down menu.
+3. Click the HTTPS sub-heading under the Clone heading.
+4. Copy the link.
+5. Open an IDE of your choice (VSCode, Atom, Komodo, etc).
+6. Open a terminal in the directory of your choice, type git clone and paste the link.
+7. A clone of the repository will now be created on your machine.
+
+## Download the repository manually
+
+1. Navigate to the GitHub Repository anatomy-quiz.
+2. Click the Code drop-down menu.
+3. Click Download ZIP.
+4. Locate the ZIP file and extract it to a folder where you want the repository to be stored.
+5. Open an IDE of your choice (VSCode, Atom, Komodo, etc).
+6. Navigate to the directory where the repository was extracted.
+7. Now you will have the contents of the project available offline on your machine.
+
+## Credits
+
+### Content
+
+- Questions found [here](https://quizglobal.com/quizplay/quizplayqanda/Human%20Body%20Quiz).
+
+### Media
+
+- Backround image by Design Cells from [iStock](https://www.istockphoto.com/photo/immune-system-defends-the-body-against-infections-and-diseases-gm1215808778-354268567?clarity=false).
+
+## Code
+
+- CSS code to highlight selected answers and change from cursor to pointer when selecting answers from Hazel Hawadi.
+
+- local storage javascript learnt from [here](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it).
 
 
-
-
-
-background image credit: design cells on istock
