@@ -1,3 +1,19 @@
+// script.js
+
+// Handling the form submission and storing the username
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('username-form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            const username = document.getElementById('username').value;
+            localStorage.setItem('username', username); // Store the username in localStorage
+            window.location.href = 'quiz.html'; // Redirect to the quiz page
+        });
+    }
+});
+
+// Handling the quiz logic
 document.addEventListener('DOMContentLoaded', () => {
     const questionArea = document.querySelector('.question-area');
     const answerArea = document.getElementById('answer-area');
@@ -5,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const incorrectElement = document.getElementById('incorrect');
     const progressBar = document.getElementById('progress-bar');
     const retakeButton = document.querySelector('.retake-btn'); // Selecting the retake button
+
+    const username = localStorage.getItem('username'); // Retrieve the username from localStorage
 
     let currentQuestionIndex = 0;
     let score = 0;
@@ -39,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateProgressBar(index);
-
     }
 
     // Function to check the selected answer
@@ -54,9 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (index + 1 === selected) {
                 button.classList.add('incorrect-answer');
             }
-             // Disable all buttons after an answer is selected
-             button.disabled = true;
+            // Disable all buttons after an answer is selected
+            button.disabled = true;
         });
+    
         // Update the score and move to the next question
         if (selected === correct) {
             score++;
@@ -70,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayQuestion(currentQuestionIndex);
         }, 1000); // Delay to see the answer highlight
     }
+    
 
     // Function to update the progress bar
     function updateProgressBar(index) {
@@ -79,10 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to show the final score and the retake button
     function showFinalScore() {
-        questionArea.innerHTML = ''; // Clearing the question area
+        questionArea.innerHTML = `<h2>Congratulations ${username}! You've completed the Quiz!</h2>`;
         answerArea.innerHTML = ''; // Clearing the answer area
         progressBar.style.width = '100%'; // Updating progress bar to full width
-        retakeButton.style.display = 'block'; // Unhiding the retake button    
+        retakeButton.style.display = 'block'; // Unhiding the retake button
     }
 
     // Start the quiz by displaying the first question
