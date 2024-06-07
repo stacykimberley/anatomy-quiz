@@ -169,10 +169,11 @@ The page is designed to be responsive on all screen sizes starting from 344pixel
 - W3C HTML Markup Validator to validate HTML code
 - W3C Jigsaw CSS Validator to validate CSS code
 - Balsamiq for wireframes
-LibreOffice Calc to create tables
+- LibreOffice Calc to create tables
 - Code Institute's Gitpod Template to generate the workspace for the project
 - Code institute learnings for general guidance.
 - JavaScript for interactivity of the Quiz.
+- iStock for background image.
 
 ## Testing 
 
