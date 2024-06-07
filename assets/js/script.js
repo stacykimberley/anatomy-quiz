@@ -79,7 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to show the final score and the retake button
     function showFinalScore() {
-
+        questionArea.innerHTML = ''; // Clearing the question area
+        answerArea.innerHTML = ''; // Clearing the answer area
+        progressBar.style.width = '100%'; // Updating progress bar to full width
+        retakeButton.style.display = 'block'; // Unhiding the retake button    
     }
 
     // Start the quiz by displaying the first question
