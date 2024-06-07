@@ -8,7 +8,7 @@ The Human Anatomy Quiz aims to provide an engaging and educational experience fo
 
 # Goal:
 
-The goal of the Human Anatomy Quiz is to foster a deeper understanding of human anatomy through an interactive and dynamic learning tool. 
+The goal of the quiz is to foster a deeper understanding of human anatomy through an interactive and dynamic learning tool. 
 
 [Here's a link to the live website](https://stacykimberley.github.io/anatomy-quiz/)
 
@@ -28,10 +28,12 @@ People of all ages with a specific interest in the human anatomy.
 - I want to see my progress and score during the quiz.
 - I want to retake the quiz if I am not satisfied with my score or just for more fun.
 - I want to be able to use the application on different sized screens
+- I want the feedback message to be personalised since I added my username.
 
 ### As a returning user:
 
 - I want to find new questions added.
+- I want to find new challenges added.
 
 ## Technologies:
 
@@ -65,13 +67,14 @@ People of all ages with a specific interest in the human anatomy.
 - 4 answer options.
 - Score area showing how many the user has got correct and incorrect.
 - Progress bar to show how far along the quiz the user has gone.
-- When answer is selected it highlights green if correct and red if wrong.
+- When answer is selected it highlights green if correct and if wrong it highlights the selected one in red then simultaneously shows you the correct answer.
 
 ### Feedback Page.
 
 - Congratulates the user by name for completing the quiz.
 - Shows the user their final score.
 - Shows a button to retake the quiz if the user wants to.
+- Shows the progress bar at complete.
 
 ## Wireframes
 
@@ -100,7 +103,7 @@ An image from iStock was used as a background image. It's an AI generated image 
 
 ![Color pallete](assets/images/readme/color-pallete.png)
 
-Color pallete was mostly derived from the background image so everything looks well put together and  aesthetically pleasing.
+Color pallete was mostly derived from the background image so everything looks well put together and  aesthetically pleasing. They also fit naturally with the human anatomu aesthetic: red for blood, blue reprents life/ water and, black & white provide contrast between the background image and text.
 
 ### Font
 
@@ -155,7 +158,7 @@ LibreOffice Calc to create tables
 ### Validator Testing:
 
 #### HTML on [W3C Validator](https://validator.w3.org/)
-No errors or warnings were returned.
+
 
 #### CSS on [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
  
