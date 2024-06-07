@@ -105,7 +105,7 @@ An image from iStock was used as a background image. It's an AI generated image 
 
 ![Color pallete](assets/images/readme/color-pallete.png)
 
-Color pallete was mostly derived from the background image so everything looks well put together and  aesthetically pleasing. They also fit naturally with the human anatomu aesthetic: red for blood, blue reprents life/ water and, black & white provide contrast between the background image and text.
+Color pallete was mostly derived from the background image so everything looks well put together and  aesthetically pleasing. They also fit naturally with the human anatomy aesthetic: red for blood, blue represents life/ water and, black & white provide contrast between the background image and text.
 
 ### Font
 
@@ -115,18 +115,41 @@ Only one font (Jura) was used throughout the quiz for uniformity.
 
 ### Home Page
 
-screenshots of username and start button, 
+Homepage has title of the quiz, username input and a start button. The user is required to enter a username to start the quiz.
+
+![Home Page Features](assets/images/readme/homepage-features-updated.png)
 
 ### Quiz Page
-quiz correct answer in green, wrong in red, correct score, incorrect score, progress bar
+
+The quiz page shows a question and four answer options. When a correct answer is selected it highlights green.
+
+![Correct Answer](assets/images/readme/corect-screenshot.png)
+
+When the wrong answer is selected, it highlights red then shows the correct answer simultaneously in green.
+
+![Wrong Answer](assets/images/readme/wrong-screenshot.png)
+
+At the bottom of the game area there is a score count and progress bar.
+
+![Score and Progress Bar](assets/images/readme/score-progress-screenshot.png)
 
 ### Feedback Page
 
-congra message, retake button, final correct and incorrect score, completed progress bar
+Congratulatory message with username on completion.
+
+![Feedback Message](assets/images/readme/feedback-message.png)
+ 
+Retake button to start the quiz again.
+
+![Retake Button](assets/images/readme/retake-screenshot.png) 
+
+Final correct, incorrect score and the completed progress bar.
+
+![Final Score](assets/images/readme/final-score-screenshot.png)
 
 ## Responsive Layout
 
-The page is designed to responsive on all screen sizes starting from 344pixels for mobile phones, 768 pixels for tablets and greater than 992pixels so it's aesthetically pleasing for laptops and slightly larger screens.
+The page is designed to be responsive on all screen sizes starting from 344pixels for mobile phones, 768 pixels for tablets and greater than 992pixels so it's aesthetically pleasing for laptops and slightly larger screens.
 
 ## Technologies
 
