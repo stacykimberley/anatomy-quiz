@@ -1,7 +1,12 @@
-// script.js
-
-// Handling the form submission and storing the username
+// Handling the quiz logic
 document.addEventListener('DOMContentLoaded', () => {
+    const questionArea = document.querySelector('.question-area');
+    const answerArea = document.getElementById('answer-area');
+    const scoreElement = document.getElementById('score');
+    const incorrectElement = document.getElementById('incorrect');
+    const progressBar = document.getElementById('progress-bar');
+    const retakeButton = document.querySelector('.retake-btn'); // Selecting the retake button
+
     const form = document.getElementById('username-form');
     if (form) {
         form.addEventListener('submit', function(event) {
@@ -11,16 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'quiz.html'; // Redirect to the quiz page
         });
     }
-});
-
-// Handling the quiz logic
-document.addEventListener('DOMContentLoaded', () => {
-    const questionArea = document.querySelector('.question-area');
-    const answerArea = document.getElementById('answer-area');
-    const scoreElement = document.getElementById('score');
-    const incorrectElement = document.getElementById('incorrect');
-    const progressBar = document.getElementById('progress-bar');
-    const retakeButton = document.querySelector('.retake-btn'); // Selecting the retake button
 
     const username = localStorage.getItem('username'); // Retrieve the username from localStorage
 
