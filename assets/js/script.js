@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const incorrectElement = document.getElementById('incorrect');
     const progressBar = document.getElementById('progress-bar');
     const retakeButton = document.querySelector('.retake-btn'); // Selecting the retake button
+    const endButton = document.querySelector('.end-btn'); // Selecting end button 
 
     const form = document.getElementById('username-form');
     if (form) {
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         answerArea.innerHTML = ''; // Clearing the answer area
         progressBar.style.width = '100%'; // Updating progress bar to full width
         retakeButton.style.display = 'block'; // Unhiding the retake button
+        endButton.style.display = 'block'; // Unhide the end button
     }
 
     // Start the quiz by displaying the first question
