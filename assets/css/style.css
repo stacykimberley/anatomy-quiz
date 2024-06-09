@@ -52,6 +52,8 @@ body {
 /* Style for the start button */
 .start-btn {
     top: 50%; /* Position in the center of the start area */
+    color:rgba(37, 150, 190, 1);
+    background-color:white;
 }
 
 /* Style for the username label */
