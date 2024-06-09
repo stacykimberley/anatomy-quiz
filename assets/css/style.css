@@ -45,7 +45,7 @@ body {
 
 /* Style for the retake button */
 .retake-btn {
-    top: 40%;
+    top: 60%;
     display: none; /* Hide the retake button */
 }
 
