@@ -56,6 +56,16 @@ body {
     top: 150px; /* Position in the center of the start area */
     color:rgba(37, 150, 190, 1);
     background-color:white;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    top: 100px;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 27px;
+    box-sizing: border-box;
+    border:2px solid #2286AA;
 }
 
 /* Style for the username label */
