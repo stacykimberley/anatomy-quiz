@@ -45,13 +45,13 @@ body {
 
 /* Style for the retake button */
 .retake-btn {
-    top: 60%;
+    top: 300px;
     display: none; /* Hide the retake button */
 }
 
 /* Style for the start button */
 .start-btn {
-    top: 50%; /* Position in the center of the start area */
+    top: 150px; /* Position in the center of the start area */
     color:rgba(37, 150, 190, 1);
     background-color:white;
 }
@@ -149,8 +149,11 @@ body {
         margin-top: 12%;
     }
 
+    .start-btn {
+        top: 100px; 
+    }    
     .retake-btn {
-    top: 15%;
+    top: 200px;
     }
 }
 
@@ -159,6 +162,10 @@ body {
     .start-btn, .retake-btn {
         margin-top: 10%;
     }
+
+    .retake-btn {
+        top: 150px;
+        }
 
     .progress-container {
         margin-top: 20px;
