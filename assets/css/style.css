@@ -14,7 +14,7 @@ body {
     background-color: rgba(255, 255, 255, .8);
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
+    height: 70%;
     max-height: 500px;
     max-width: 830px;
     margin-top: 5%;
@@ -30,26 +30,24 @@ body {
     position: relative; /* Ensure relative positioning for z-indexing */
 }
 
-/* Style for the buttons */
-.end-btn, .retake-btn, .start-btn {
+.button-container {
+    margin-top: 20px;
+}
+
+/* Style for the end and retake buttons */
+.end-btn, .retake-btn {
     padding: 20px;
     font-weight: bold;
     color: rgba(37, 150, 190, 1);
     border: 2px solid rgba(37, 150, 190, 1);
-    width: 45%; /* Ensure both buttons have the same width */
+    background-color: white;
+    cursor: pointer;
+    top: 100px;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 27px;
     box-sizing: border-box;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Style for the retake button */
-.retake-btn {
-    top: 300px;
-    display: none; /* Hide the retake button */
-}
-
-.end-btn {
     display: none;
 }
 
@@ -100,6 +98,7 @@ body {
 .option-btn {
     padding: 10px;
     background-color: rgba(119, 199, 228, 1);
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -158,6 +157,10 @@ body {
     }    
     .retake-btn {
     top: 200px;
+    }
+
+    .retake-btn, .end-btn {
+        margin-left: 60px;
     }
 }
 
