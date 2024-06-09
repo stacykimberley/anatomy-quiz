@@ -31,7 +31,7 @@ body {
 }
 
 /* Style for the buttons */
-.retake-btn, .start-btn {
+.end-btn, .retake-btn, .start-btn {
     padding: 20px;
     font-weight: bold;
     color: rgba(37, 150, 190, 1);
@@ -47,6 +47,10 @@ body {
 .retake-btn {
     top: 300px;
     display: none; /* Hide the retake button */
+}
+
+.end-btn {
+    display: none;
 }
 
 /* Style for the start button */
