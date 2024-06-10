@@ -323,4 +323,16 @@ After commenting the version name no errors were returned for both files, just t
 
 - local storage javascript learnt from [here](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it).
 
+- Javascript learnings from Code institure lessons.
+
+## Acknowledgements
+
+I would like to express my gratitude to the following individuals for their contributions and support:
+
+My mentor, Ronan McClelland for great support, advice, learning reasources and guidance throughout this project.
+
+My sister Hazel Hawadi for moral support and help with coding.
+
+Amy Richardson(Cohort Facilitator) for her regular check-ins and support.
+
 
