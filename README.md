@@ -256,6 +256,15 @@ No errors were returned for both files, just the questions variable which was ca
 
 ![Quizpage Lighthouse Desktop](assets/images/readme/quiz-page-desktop-test.png)
 
+## Create a repository
+
+**The steps to create a repository on github are as follows:**
+
+1. Go to github and sign in.
+2. Once signed in, click the “+” icon in the top-right corner and select “New repository” from the dropdown menu.
+3. Enter a unique name for your repository then set it to public.
+4. Click the green “Create repository” button at the bottom to finalize the creation of your repository.
+
 ## Deployment
 
 **This project was deployed to GitHub pages. The steps to deploy are as follows:**
