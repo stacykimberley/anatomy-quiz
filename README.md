@@ -2,6 +2,23 @@
 
 ![Website Mockup](assets/images/readme/mockup.jpeg)
 
+# Table of Contents
+- [Purpose](#purpose)
+- [UX Design](#ux-design) 
+  * [Target audience](#target-audience)
+  * [User stories](#user-stories)
+- [Technologies](#technologies)  
+- [Assumptions](#assumptions)
+- [Constraints](#constraints)
+- [Structure](#structure)
+  * [Home Page](#home-page)
+  * [Quiz Page](#quiz-page)
+  * [Feedback Page](#feedback-page)
+- [Wireframes](#wireframes)  
+- [Design](#design)
+- [Features](#features)
+
+
 # Purpose
 
 The Human Anatomy Quiz aims to provide an engaging and educational experience for those interested in learning about human anatomy. It offers a fun way to test and expand knowledge of anatomical structures and functions through randomly selected questions. The quiz is designed to be interactive and enjoyable, suitable for students, educators, and anyone curious about anatomy. 
@@ -29,6 +46,7 @@ People of all ages with a specific interest in the human anatomy.
 - I want to retake the quiz if I am not satisfied with my score or just for more fun.
 - I want to be able to use the application on different sized screens
 - I want the feedback message to be personalised since I added my username.
+- I want to go back to username if I want to change it.
 
 ### As a returning user:
 
@@ -77,6 +95,7 @@ People of all ages with a specific interest in the human anatomy.
 - Shows a button to retake the quiz if the user wants to.
 - Shows the progress bar at complete.
 - When user restarts the Quiz they do not have to re-enter their name as it is stored in local storage and it resets the scores and progress bar.
+- When a user clicks the End Quiz button it redirects them to the Home page.
 
 ## Wireframes
 
@@ -92,7 +111,7 @@ People of all ages with a specific interest in the human anatomy.
 
 ### Feedback Page
 
-![Feedback Page Mockup](assets/images/readme/big-screen-feedback.JPEG)
+![Feedback Page Mockup](assets/images/readme/feedback-page-wireframe.png)
 
 
 ## Design
@@ -141,7 +160,7 @@ Congratulatory message with username on completion.
  
 Retake button to start the quiz again.
 
-![Retake Button](assets/images/readme/retake-screenshot.png) 
+![Retake and End Button](assets/images/readme/end-buttons.png) 
 
 Final correct, incorrect score and the completed progress bar.
 
@@ -153,24 +172,24 @@ The page is designed to be responsive on all screen sizes starting from 344pixel
 
 ## Technologies
 
-- HTML for website structure
-- CSS to style website
-- GitHub to store the source code and GitHub Pages to deploy and host the live site
-- Gitpod chosen IDE to develop the website
-- Google Fonts
-- Font Awesome for icons
-- Google Chrome Dev Tools
+- HTML for website structure.
+- CSS to style website.
+- GitHub to store the source code and GitHub Pages to deploy and host the live site.
+- Gitpod chosen IDE to develop the website.
+- Google Fonts.
+- Font Awesome for icons.
+- Google Chrome Dev Tools.
 - Favicon.cc 
 - Coolors to choose color palette
-- Techsini to create mockup of website on different iOS devices
-- Google chrome Lighthouse
-- Screen Reader for Google Chrome
-- Colorfilter
-- W3C HTML Markup Validator to validate HTML code
-- W3C Jigsaw CSS Validator to validate CSS code
-- Balsamiq for wireframes
-- LibreOffice Calc to create tables
-- Code Institute's Gitpod Template to generate the workspace for the project
+- Techsini to create mockup of website on different iOS devices.
+- Google chrome Lighthouse.
+- Screen Reader for Google Chrome.
+- Colorfilter.
+- W3C HTML Markup Validator to validate HTML code.
+- W3C Jigsaw CSS Validator to validate CSS code.
+- Balsamiq for wireframes.
+- Microsoft Word to create testing tables.
+- Code Institute's Gitpod Template to generate the workspace for the project.
 - Code institute learnings for general guidance.
 - JavaScript for interactivity of the Quiz.
 - iStock for background image.
