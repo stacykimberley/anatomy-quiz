@@ -17,6 +17,12 @@
 - [Wireframes](#wireframes)  
 - [Design](#design)
 - [Features](#features)
+- [Technologies](#technologies-1)
+- [Testing](#testing)
+  * [User story testing](#user-story-testing)
+  * [Feature testing](#feature-testing)
+  * [Validator testing](#validator-testing)
+
 
 
 # Purpose
@@ -222,7 +228,11 @@ An error returned because the retake button is a descendent of the a element. No
 
 No errors returned for style.css.
  
-javascript testing 
+#### Javascript on [JShint](https://jshint.com/)
+
+No errors were returned for both files, just the questions variable which was called in a separate file.
+
+![JShint results](assets/images/readme/javascript-test.png)
 
 ### Google Lighthouse 
 
