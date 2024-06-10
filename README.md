@@ -240,11 +240,11 @@ javascript testing
 
 **Mobile**
 
-![Quizpage Lighthouse Mobile](assets/images/readme/quiz-mobile.png)
+![Quizpage Lighthouse Mobile](assets/images/readme/quiz-page-mobile-test.png)
 
 **Desktop**
 
-![Quizpage Lighthouse Desktop](assets/images/readme/quiz-desktop.png)
+![Quizpage Lighthouse Desktop](assets/images/readme/quiz-page-desktop-test.png)
 
 ## Deployment
 
