@@ -52,6 +52,10 @@ body {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Style for the start button */
 .start-btn {
     top: 150px; /* Position in the center of the start area */
