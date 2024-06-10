@@ -230,7 +230,11 @@ No errors returned for style.css.
  
 #### Javascript on [JShint](https://jshint.com/)
 
-No errors were returned for both files, just the questions variable which was called in a separate file.
+28 warnings were initially returned after testing with jshint. 
+
+![jshint errors](assets/images/readme/jshint-errors.png)
+
+After commenting the version name no errors were returned for both files, just the questions variable which was called in a separate file.
 
 ![JShint results](assets/images/readme/javascript-test.png)
 
@@ -307,7 +311,7 @@ No errors were returned for both files, just the questions variable which was ca
 
 ### Content
 
-- Questions found [here](https://quizglobal.com/quizplay/quizplayqanda/Human%20Body%20Quiz).
+- Questions found and selected [here](https://quizglobal.com/quizplay/quizplayqanda/Human%20Body%20Quiz).
 
 ### Media
 
