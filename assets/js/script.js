@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // Handling the quiz logic
 document.addEventListener('DOMContentLoaded', () => {
     const questionArea = document.querySelector('.question-area');
