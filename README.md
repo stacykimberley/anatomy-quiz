@@ -206,6 +206,8 @@ The page is designed to be responsive on all screen sizes starting from 344pixel
 
 ### User Story Testing:
 
+![User story testing table](assets/images/readme/user-story-testing.png)
+
 ### Feature Testing:
 
 ### Validator Testing:
