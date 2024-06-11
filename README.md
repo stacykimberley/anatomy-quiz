@@ -22,6 +22,8 @@
   * [User story testing](#user-story-testing)
   * [Feature testing](#feature-testing)
   * [Validator testing](#validator-testing)
+- [Bugs](#bugs)
+- [Unfixed bugs](#unfixed-bugs)
 - [Credits](#credits)  
 - [Acknowledgements](#aknowledgements) 
 
