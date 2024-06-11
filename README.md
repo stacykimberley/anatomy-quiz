@@ -25,7 +25,7 @@
 - [Bugs](#bugs)
 - [Unfixed bugs](#unfixed-bugs)
 - [Credits](#credits)  
-- [Acknowledgements](#aknowledgements) 
+- [Acknowledgements](#acknowledgements) 
 
 
 
