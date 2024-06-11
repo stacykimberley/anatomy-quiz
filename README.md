@@ -270,6 +270,14 @@ After commenting the version name no errors were returned for both files, just t
 
 ![Quizpage Lighthouse Desktop](assets/images/readme/quiz-page-desktop-test.png)
 
+## Bugs
+
+28 warnings were initially returned after testing with jshint. After commenting the version name into script.js no errors were returned for both files, just the questions variable which was called in a separate file.
+
+## Unfixed bugs
+
+An error returned because the retake button in quiz.html is a descendent of the a element. No changes being made to code at the moment.
+
 ## Create a repository
 
 **The steps to create a repository on github are as follows:**
