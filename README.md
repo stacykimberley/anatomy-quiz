@@ -333,7 +333,7 @@ After commenting the version name no errors were returned for both files, just t
 
 - local storage javascript learnt from [here](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it) and modified.
 
-- Javascript learnings from Code institure lessons.
+- Javascript learnings from Code institute lessons.
 - Structure for questions.js found [here](https://github.com/siobhanlgorman/80s-Mixtape-Quiz) and modified.
 
 ## Acknowledgements
