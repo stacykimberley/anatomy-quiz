@@ -22,6 +22,8 @@
   * [User story testing](#user-story-testing)
   * [Feature testing](#feature-testing)
   * [Validator testing](#validator-testing)
+- [Credits](#credits)  
+- [Acknowledgements](#aknowledgements) 
 
 
 
@@ -317,13 +319,14 @@ After commenting the version name no errors were returned for both files, just t
 
 - Backround image by Design Cells from [iStock](https://www.istockphoto.com/photo/immune-system-defends-the-body-against-infections-and-diseases-gm1215808778-354268567?clarity=false).
 
-## Code
+### Code
 
 - CSS code to highlight selected answers and change from cursor to pointer when selecting answers from Hazel Hawadi.
 
-- local storage javascript learnt from [here](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it).
+- local storage javascript learnt from [here](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it) and modified.
 
 - Javascript learnings from Code institure lessons.
+- Structure for questions.js found [here](https://github.com/siobhanlgorman/80s-Mixtape-Quiz) and modified.
 
 ## Acknowledgements
 
