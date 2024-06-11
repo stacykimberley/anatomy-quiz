@@ -210,6 +210,12 @@ The page is designed to be responsive on all screen sizes starting from 344pixel
 
 ### Feature Testing:
 
+![Feature test table 1](assets/images/readme/feature-test-1.png)
+
+![Feature test table 2](assets/images/readme/feature-test-1.png)
+
+![Feature test table 3](assets/images/readme/feature-test-1.png)
+
 ### Validator Testing:
 
 #### HTML on [W3C Validator](https://validator.w3.org/)
